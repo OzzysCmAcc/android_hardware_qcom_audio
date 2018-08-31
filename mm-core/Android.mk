@@ -91,6 +91,7 @@ LOCAL_MODULE_TAGS       := optional
 LOCAL_VENDOR_MODULE     := true
 LOCAL_SHARED_LIBRARIES  := liblog libdl
 LOCAL_CFLAGS            := $(OMXCORE_CFLAGS)
+LOCAL_CFLAGS            += -Wno-unused-value
 
 LOCAL_SRC_FILES         := src/common/omx_core_cmp.cpp
 LOCAL_SRC_FILES         += src/common/qc_omx_core.c
@@ -116,6 +117,7 @@ LOCAL_MODULE_TAGS       := optional
 LOCAL_VENDOR_MODULE     := true
 LOCAL_SHARED_LIBRARIES  := liblog libdl
 LOCAL_CFLAGS            := $(OMXCORE_CFLAGS)
+LOCAL_CFLAGS            += -Wno-unused-value
 
 LOCAL_SRC_FILES         := src/common/omx_core_cmp.cpp
 LOCAL_SRC_FILES         += src/common/qc_omx_core.c
